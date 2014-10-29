@@ -1,6 +1,6 @@
 # tiny-bugsnag 
 
-A Clojure library designed to send exception reports to bugsnag.com
+A Clojure library designed to send exception reports to [BugSnag](http://bugsnag.com).
 
 ## Usage
 

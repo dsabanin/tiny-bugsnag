@@ -5,7 +5,10 @@ A Clojure library designed to send exception reports to [BugSnag](http://bugsnag
 ## Usage
 
 ```clojure
-(bugsnag/setup! bugsnag-key "production")
+(ns test
+  (:require [tiny-bugsnag.core :as bugsnag]))
+            
+(bugsnag/setup! "6f6db104bc57ee7efc98b14af2" "production")
 
 ;; simplest form
 (bugsnag/notify :exception exc)

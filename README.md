@@ -1,4 +1,4 @@
-# tiny-bugsnag
+# tiny-bugsnag 
 
 A Clojure library designed to send exception reports to bugsnag.com
 
@@ -17,6 +17,10 @@ A Clojure library designed to send exception reports to bugsnag.com
                 :user optional-user-id
                 :severity "warning")
 ```
+
+## Install
+
+[![Clojars Project](http://clojars.org/tiny-bugsnag/latest-version.svg)](http://clojars.org/tiny-bugsnag)
 
 ## License
 

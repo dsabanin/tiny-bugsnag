@@ -1,14 +1,26 @@
 # tiny-bugsnag
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library designed to send exception reports to bugsnag.com
 
 ## Usage
 
-FIXME
+```clojure
+(bugsnag/setup! bugsnag-key "production")
+
+;; simplest form
+(bugsnag/notify :exception exc)
+
+;; more options
+(bugsnag/notify :context "Some Context"
+                :exception exc
+                :data {"Optional Tab" {"Key" "Value"}}
+                :user optional-user-id
+                :severity "warning")
+```
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Dima
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
